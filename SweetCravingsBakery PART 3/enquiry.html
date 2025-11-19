@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Enquiry | Sweet Cravings Bakery – Custom Cakes & Catering</title>
+    <meta name="description" content="Submit an enquiry for custom cakes, bulk orders, or catering by Sweet Cravings Bakery. Fast responses and personalised quotes.">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+<header>
+    <h1>Sweet Cravings Bakery</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html" class="active">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section class="contact">
+    <h2>Place an Enquiry</h2>
+    <p>Ask about custom cakes, bulk orders or catering. Get a quick estimated quote below.</p>
+
+    <form id="enquiryForm">
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9+\-\s]{7,15}" required>
+
+        <select id="enquiryType" name="enquiry-type" required>
+            <option value="">Select Enquiry Type</option>
+            <option value="custom-cake">Custom Cake</option>
+            <option value="bulk-order">Bulk Order</option>
+            <option value="catering">Catering Service</option>
+            <option value="other">Other</option>
+        </select>
+
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Submit Enquiry</button>
+    </form>
+
+    <div id="enquiryResult" class="result-box" style="display:none;"></div>
+</section>
+</main>
+
+<footer>
+    <p>© 2025 Sweet Cravings Bakery</p>
+</footer>
+</body>
+</html>

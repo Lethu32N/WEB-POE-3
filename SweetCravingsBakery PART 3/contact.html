@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Contact Us | Sweet Cravings Bakery</title>
+    <meta name="description" content="Contact Sweet Cravings Bakery for custom cake orders, enquiries or general messages.">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+<header>
+    <h1>Sweet Cravings Bakery</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Send us a message and we will reply within 24 hours.</p>
+
+    <h3>Contact Form</h3>
+    <form id="contactForm">
+        <input type="text" id="cname" name="name" placeholder="Full Name" required>
+        <input type="email" id="cemail" name="email" placeholder="Email Address" required>
+        <input type="tel" id="cphone" name="phone" placeholder="Phone Number" pattern="[0-9+\-\s]{7,15}" required>
+
+        <select id="ctype" name="type" required>
+            <option value="">Message Type</option>
+            <option value="general">General Query</option>
+            <option value="complaint">Complaint</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <textarea id="cmessage" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <div id="contactResult" class="result-box" style="display:none;"></div>
+</section>
+</main>
+
+<footer>
+    <p>© 2025 Sweet Cravings Bakery</p>
+</footer>
+</body>
+</html>
